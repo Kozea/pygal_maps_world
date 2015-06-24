@@ -18,7 +18,7 @@
 # along with pygal. If not, see <http://www.gnu.org/licenses/>.
 
 from pygal_maps_world.maps import (
-    Worldmap, SupranationalWorldmap)
+    World, SupranationalWorld)
 from pygal_maps_world.i18n import COUNTRIES, SUPRANATIONAL, set_countries
 import operator
 try:
@@ -35,7 +35,7 @@ def test_worldmap():
     for i, ctry in enumerate(COUNTRIES):
         datas[ctry] = i
 
-    wmap = Worldmap()
+    wmap = World()
     wmap.add('countries', datas)
     q = wmap.render_pyquery()
     assert len(
@@ -51,7 +51,7 @@ def test_worldmap_i18n():
         datas[ctry] = i
 
     set_countries({'fr': 'Francia'})
-    wmap = Worldmap()
+    wmap = World()
     wmap.add('countries', datas)
     q = wmap.render_pyquery()
     assert len(
@@ -62,7 +62,7 @@ def test_worldmap_i18n():
 
 def test_worldmap_i18n_clear():
     set_countries(_COUNTRIES, True)
-    wmap = Worldmap()
+    wmap = World()
     wmap.add('countries', dict(fr=12))
     set_countries({'fr': 'Frankreich'}, clear=True)
     q = wmap.render_pyquery()
@@ -78,7 +78,7 @@ def test_supranationalworldmap():
     for i, supra in enumerate(SUPRANATIONAL):
         datas[supra] = i + 1
 
-    wmap = SupranationalWorldmap()
+    wmap = SupranationalWorld()
     wmap.add('supra', datas)
     q = wmap.render_pyquery()
     assert len(
