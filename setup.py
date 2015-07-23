@@ -24,7 +24,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pygal_maps_world",
-    version='1.0.1',
+    version='1.0.2',
     description="World maps for pygal",
     author="Kozea",
     url="http://pygal.org/",

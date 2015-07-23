@@ -206,11 +206,11 @@ ASIA = [
 ]
 
 EUROPE = [
-    'al', 'am', 'at', 'az', 'be', 'by', 'ba', 'bg', 'hr', 'cy', 'cz', 'dk',
-    'ee', 'fi', 'fr', 'ge', 'de', 'gr', 'hu', 'is', 'ie', 'it', 'kz', 'lv',
-    'li', 'lt', 'lu', 'mk', 'mt', 'md', 'mc', 'me', 'nl', 'no', 'pl', 'pt',
-    'ro', 'ru', 'sm', 'rs', 'sk', 'si', 'es', 'se', 'ch', 'tr', 'ua', 'gb',
-    'va'
+    'ad', 'al', 'am', 'at', 'az', 'be', 'by', 'ba', 'bg', 'hr', 'cy', 'cz',
+    'dk', 'ee', 'fi', 'fr', 'ge', 'de', 'gr', 'hu', 'is', 'ie', 'it', 'kz',
+    'lv', 'li', 'lt', 'lu', 'mk', 'mt', 'md', 'mc', 'me', 'nl', 'no', 'pl',
+    'pt', 'ro', 'ru', 'sm', 'rs', 'sk', 'si', 'es', 'se', 'ch', 'tr', 'ua',
+    'gb', 'va'
 ]
 
 AFRICA = [
